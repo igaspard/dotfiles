@@ -1,0 +1,18 @@
+#set line /dev/tty.usbserial-A506ZJSH
+set line /dev/tty.usbserial-A506ZJWF
+set speed 115200
+set carrier-watch off
+set handshake none
+set flow-control none
+robust
+set file type bin
+set file name lit
+set rec pack 9024
+set send pack 9024
+set window-size 20
+set protocol zmodem
+set protocol xmodem
+SET SESSION-LOG TIMESTAMPS
+SET SESSION-LOG TEX
+#log session ~/Logs/kermit/\v(ndate)-\v(time).txt append
+
